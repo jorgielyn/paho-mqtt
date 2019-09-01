@@ -16,7 +16,7 @@ function onConnect() {
   // Once a connection has been made, make a subscription and send a message.
   console.log("Connected Successfully");
   client.subscribe("World");
-//   message = new Paho.Message("Hello Yubert Mariscal");
+//   message = new Paho.Message("Hello jorgielyn!");
 //   message.destinationName = "World";
 //   client.send(message);
 }
@@ -43,7 +43,7 @@ btnConnect.addEventListener("click",function(e){
 btnPublish.addEventListener("click", function(e) {
     e.preventDefault();
     console.log("Publish button..");
-    message = new Paho.Message("Hello Yubert Mariscal");
+    message = new Paho.Message("Hello jorgielyn");
     message.destinationName = "World";
     client.send(message);
 })
